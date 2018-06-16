@@ -15,7 +15,7 @@ function generateUser(){
 		console.log(data);
 		let dataName = data.results[0].name.first + " " + data.results[0].name.last;
 		username.innerText = dataName.toUpperCase();
-		let dataTitle = data.results[0].name.title;
+		let dataTitle = data.results[0].login.username;
 		title.innerText = dataTitle.toUpperCase();
 		email.innerText = data.results[0].email;
 		city.innerText = data.results[0].location.city;
